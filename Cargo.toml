@@ -12,7 +12,7 @@ description = """
 Timeouts for futures.
 """
 
-[dependencies]
+[target.'cfg(target_arch = "wasm32")'.dependencies]
 gloo-timers = { version = "0.2.0", features = ["futures"], optional = true }
 send_wrapper = { version = "0.4.0", optional = true }
 
